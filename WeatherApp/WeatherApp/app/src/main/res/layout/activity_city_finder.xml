@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".CityFinder">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/back"
+        android:src="@drawable/ic_back"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchCity"
+        android:inputType="textAutoCorrect"
+        android:layout_below="@+id/back"
+        android:hint="Enter City Name"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="@color/white"
+        android:textSize="30dp"
+        android:imeOptions="actionGo"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select"
+        android:text="Select a City: "
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_below="@+id/searchCity"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll1"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/select"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mumbai"
+            >
+
+            <TextView
+                android:id="@+id/tvMumbai"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_city"
+                android:padding="5dp"
+                android:text="Mumbai"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delhi"
+            >
+
+            <TextView
+                android:id="@+id/tvDelhi"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_city"
+                android:padding="5dp"
+                android:text="Delhi"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/kolkata"
+            >
+
+            <TextView
+                android:id="@+id/tvKolkata"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_city"
+                android:padding="5dp"
+                android:text="Kolkata"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll2"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll1"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bangalore"
+            >
+
+            <TextView
+                android:id="@+id/tvBangalore"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_city"
+                android:padding="5dp"
+                android:text="Bangalore"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/goa"
+            >
+
+            <TextView
+                android:id="@+id/tvGoa"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_city"
+                android:padding="5dp"
+                android:text="Goa"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chennai"
+            >
+
+            <TextView
+                android:id="@+id/tvChennai"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/roundbutton"
+                android:drawableLeft="@drawable/ic_city"
+                android:padding="5dp"
+                android:text="Chennai"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/ll2"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Weather"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="@drawable/roundbutton"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
